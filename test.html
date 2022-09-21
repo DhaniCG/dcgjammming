@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Get History Length</title>
+</head>
+<body>
+    <script>
+    function getViews() {
+        const a = window.location.href.match(/20Saved([^%]*)/);
+        alert("You've accessed " + a + " web pages in this session.");
+    }
+    </script>
+     
+    <button type="button" onclick="getViews();">Get Views Count</button>
+</body>
+</html>
